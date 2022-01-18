@@ -12,6 +12,12 @@ window.axios = axios;
 }); */
 Alpine.data('variables', () => variables);
 
+// eslint-disable-next-line no-console
+console.log(`
+  As u can see, i make this cv using tailwind & alpine as core program.\n
+`);
+
+
 /* axios.get('/partials/head.html').then((response) => {
   console.log(response);
 });
