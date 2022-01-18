@@ -34,10 +34,10 @@ module.exports = {
       company: 'PT. Tyfountex Indonesia',
       as: 'IT Staff',
       since: [
-        Date(2019, 6), Date(2019, 12),
+        new Date(2019, 6), new Date(2019, 12),
       ],
       do: [
-        'Developed new reporting system with ASP technologies to replace their monolith desktop based system',
+        'Developed new reporting system with ASP technologies to revolutionize their monolith desktop based system',
         'Doing some chore for maintaining & troubleshooting employee\'s computer',
         'Managed to help the security officer by creating attendance tracker system (Mobile)',
       ],
@@ -46,7 +46,7 @@ module.exports = {
       company: 'PT Sanityasa Anjaya Daniswara',
       as: 'Fullstack Engineer',
       since: [
-        Date(2020, 2), Date(2020, 6),
+        new Date(2020, 2), new Date(2020, 6),
       ],
       do: [
         'Reported some vulnerability API system before i was given the responsibility to see their logic system',
@@ -58,7 +58,7 @@ module.exports = {
       company: 'PT Daya Rekadigi Indonesia',
       as: 'Backend Engineer, Mobile Developer & Sysadmin',
       since: [
-        Date(2020, 6), Date.now(),
+        new Date(2020, 6), Date.now(),
       ],
       do: [
         'Setup network ecosystem, self hosted application like dns, mail server, sms server & etc on physical server',

@@ -39,6 +39,21 @@
         <div class="text-lg">
           Work Experiences
         </div>
+        <template x-for="exp in work_experiences">
+          <div class="mb-4">
+            <div class="flex flex-row space-x-1">
+              <div class="font-bold" x-text="exp.company"></div>
+              <div> as </div>
+              <div class="italic" x-text="exp.as"></div>
+              <div class="text-sm" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
+            </div>
+            <ul class="ml-4 list-disc">
+              <template x-for="todo in exp.do">
+                <li x-text="todo"></li>
+              </template>
+            </ul>
+          </div>
+        </template>
       </div>
     </div>
   </div>

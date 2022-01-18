@@ -2,10 +2,12 @@ import 'tailwindcss/tailwind.css';
 import '@fortawesome/fontawesome-free/js/all';
 import Alpine from 'alpinejs';
 import axios from 'axios';
+import moment from 'moment';
 import variables from './variables';
 
 window.Alpine = Alpine;
 window.axios = axios;
+window.moment = moment;
 
 /* Object.keys(variables).forEach((key) => {
   Alpine.data(key, () => (variables[key]));
