@@ -7,18 +7,34 @@
 
 </head>
 <body x-init="" x-data="variables">
-  <div class="max-w-5xl lg:mx-64 lg:shadow-lg">
+  <div class="max-w-5xl shadow-lg shadow-black lg:mx-64 lg:drop-shadow-lg">
     <div class="flex flex-col items-center py-4 text-gray-200 bg-gray-800">
-      <div class="pt-12 pb-10 text-lg lg:text-3xl lg:pt-16 lg:pb-14">
+      <div class="pt-12 pb-10 font-mono text-3xl lg:text-5xl lg:pt-14 lg:pb-12">
         Yanuarizal K.
       </div>
-      <div class="flex flex-row space-x-8">
-        <a id="email" href="#" x-text="email"></a>
-        <a id="mobile" href="#" x-text="mobile"></a>
-        <div id="others" class="">
+      <div class="flex flex-row items-center space-x-8 text-sm">
+        <a id="email" class="flex items-center space-x-2" :href="methods.mailTo(email)">
+          <i class="fa-solid fa-envelope"></i>
+          <div x-text="email"></div>
+        </a>
+        <a id="mobile" href="#" class="flex items-center space-x-2" :href="methods.toWhatsapp(mobile)">
+          <i class="fa-solid fa-phone"></i>
+          <div x-text="mobile"></div>
+        </a>
+        <a id="address" href="#" class="flex items-center space-x-2" :href="methods.toPlace(google_place)">
+          <i class="fa-solid fa-at"></i>
+          <div x-text="address"></div>
+        </a>
+        <a id="github" href="#" class="flex items-center space-x-2" :href="methods.toGithub(github_username)">
+          <i class="fa-brands fa-github"></i>
+          <div x-text="github_username"></div>
+        </a>
 
-        </div>
       </div>
+    </div>
+
+    <div class="p-8 bg-white">
+      content
     </div>
   </div>
 </body>

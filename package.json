@@ -79,6 +79,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0-beta3",
     "alpinejs": "^3.4.1",
     "axios": "^0.21.4",
     "chalk": "^2.4.2",
@@ -86,7 +87,6 @@
     "enquirer": "^2.3.6",
     "figlet": "^1.2.3",
     "ftp-deploy": "^2.4.1",
-    "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "reset-css": "^5.0.1",
     "sanitize.css": "^12.0.0",

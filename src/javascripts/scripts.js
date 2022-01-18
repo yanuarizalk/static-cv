@@ -1,8 +1,8 @@
-/* eslint-disable no-console */
 import 'tailwindcss/tailwind.css';
+import '@fortawesome/fontawesome-free/js/all';
 import Alpine from 'alpinejs';
 import axios from 'axios';
-import variables from '../../config/variables';
+import variables from './variables';
 
 window.Alpine = Alpine;
 window.axios = axios;
