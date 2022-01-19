@@ -33,27 +33,57 @@
       </div>
     </div>
 
-    <div class="p-8 bg-white">
+    <div class="flex flex-col p-8 space-y-4 bg-white">
       <pre id="describe" class="my-8 italic text-center" x-text="description"></pre>
       <div id="experience" class="">
-        <div class="text-lg">
-          Work Experiences
+        <div class="mb-2 text-lg font-bold">
+          Work Experiences <hr />
         </div>
-        <template x-for="exp in work_experiences">
+        <template x-for="exp in experiences">
           <div class="mb-4">
             <div class="flex flex-row space-x-1">
               <div class="font-bold" x-text="exp.company"></div>
               <div> as </div>
               <div class="italic" x-text="exp.as"></div>
-              <div class="text-sm" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
+              <div class="text-xs font-light" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
             </div>
             <ul class="ml-4 list-disc">
               <template x-for="todo in exp.do">
-                <li x-text="todo"></li>
+                <li class="text-sm do" x-text="todo"></li>
               </template>
             </ul>
           </div>
         </template>
+      </div>
+      <div id="education" class="">
+        <div class="mb-2 text-lg font-bold">
+          Educations <hr />
+        </div>
+        <template x-for="exp in educations">
+          <div class="mb-4">
+            <div class="flex flex-row space-x-1">
+              <div class="font-bold" x-text="exp.institution"></div>
+              <div class="text-xs font-light" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
+            </div>
+            <ul class="ml-4 list-disc">
+              <template x-for="todo in exp.do">
+                <li class="text-sm do" x-text="todo"></li>
+              </template>
+            </ul>
+          </div>
+        </template>
+      </div>
+      <div class="flex space-x-8">
+        <div id="skill" class="flex-auto text-center">
+          <div class="mb-2 text-lg font-bold">
+            Skills <hr />
+          </div>
+        </div>
+        <div id="tech" class="flex-auto text-center">
+          <div class="mb-2 text-lg font-bold">
+            Technologies <hr />
+          </div>
+        </div>
       </div>
     </div>
   </div>

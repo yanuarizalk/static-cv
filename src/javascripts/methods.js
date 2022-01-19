@@ -4,5 +4,5 @@ module.exports = {
   toPlace: (value) => `https://www.google.com/maps/place/${value}`,
   toGithub: (value) => `https://github.com/${value}`,
   // eslint-disable-next-line no-undef
-  toDate: (fromDate, toDate) => `(${moment(fromDate).format('YYYY MMM')} - ${moment(toDate).format('YYYY MMM')})`,
+  toDate: (fromDate, toDate) => `${moment(fromDate).format('YYYY MMM')} - ${moment(toDate).format('YYYY MMM')}`,
 };

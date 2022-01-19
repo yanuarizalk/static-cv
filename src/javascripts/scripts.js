@@ -17,6 +17,8 @@ Alpine.data('variables', () => variables);
 // eslint-disable-next-line no-console
 console.log(`
   As u can see, i make this cv using tailwind & alpine as core program.\n
+
+  I am only using custom css to add (.) point suffix inside list element LOL.
 `);
 
 

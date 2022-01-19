@@ -1,2 +1,6 @@
 // Load CSS Reset from NPM
-@import "~normalize.css"
+@import "~normalize.css";
+
+ul .do::after {
+  content: '.';
+}
