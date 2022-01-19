@@ -25,7 +25,7 @@ module.exports = {
         new Date(2019, 0), new Date(2019, 2),
       ],
       do: [
-        'Polishing web skills that have been taught already in highschool',
+        'Polishing web skills that have been taught already in highschool for 3 months',
         'Pass & certified as web developer by Kemkominfo',
       ],
     },

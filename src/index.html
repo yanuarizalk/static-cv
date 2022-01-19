@@ -41,11 +41,11 @@
         </div>
         <template x-for="exp in experiences">
           <div class="mb-4">
-            <div class="flex flex-row space-x-1">
-              <div class="font-bold" x-text="exp.company"></div>
-              <div> as </div>
-              <div class="italic" x-text="exp.as"></div>
-              <div class="text-xs font-light" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
+            <div class="flex flex-row flex-wrap items-center space-x-0 md:space-x-1 md:flex-nowrap">
+              <div class="font-bold basis-4/6 md:basis-auto" x-text="exp.company"></div>
+              <div class="hidden md:block"> as </div>
+              <div class="order-last text-sm italic md:text-base md:order-2 basis-full md:basis-auto" x-text="exp.as"></div>
+              <div class="order-2 text-xs font-light md:order-last basis-2/6 md:basis-auto" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
             </div>
             <ul class="ml-4 list-disc">
               <template x-for="todo in exp.do">
@@ -73,7 +73,7 @@
           </div>
         </template>
       </div>
-      <div class="flex space-x-8">
+      <!-- <div class="flex space-x-8">
         <div id="skill" class="flex-auto text-center">
           <div class="mb-2 text-lg font-bold">
             Skills <hr />
@@ -83,6 +83,11 @@
           <div class="mb-2 text-lg font-bold">
             Technologies <hr />
           </div>
+        </div>
+      </div> -->
+      <div id="tech" class="">
+        <div class="mb-2 text-lg font-bold">
+          Technologies <hr />
         </div>
       </div>
     </div>
