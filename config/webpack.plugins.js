@@ -14,6 +14,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
+const SizePlugin = require('size-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const config = require('./site.config');
 
@@ -140,5 +142,7 @@ module.exports = [
   config.env === 'production' && sitemap,
   config.googleAnalyticsUA && google,
   webpackBar,
+  new SizePlugin(),
+  new BundleAnalyzerPlugin(),
   config.env === 'development' && hmr,
 ].filter(Boolean);

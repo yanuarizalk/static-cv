@@ -1,9 +1,16 @@
 import 'tailwindcss/tailwind.css';
-import '@fortawesome/fontawesome-free/js/all';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import faEnvelope from '@fortawesome/free-solid-svg-icons/faEnvelope';
+import faPhone from '@fortawesome/free-solid-svg-icons/faPhone';
+import faAt from '@fortawesome/free-solid-svg-icons/faAt';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Alpine from 'alpinejs';
 import axios from 'axios';
 import moment from 'moment';
 import variables from './variables';
+
+library.add(faEnvelope, faPhone, faAt, faGithub);
+dom.watch();
 
 window.Alpine = Alpine;
 window.axios = axios;

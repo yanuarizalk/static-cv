@@ -76,7 +76,7 @@ module.exports = {
         new Date(2020, 5), Date.now(),
       ],
       do: [
-        'Setup network ecosystem, self hosted application like dns, mail server, sms server & etc on physical server',
+        'Setup network ecosystem, self hosted application like dns, mail, sms & etc on physical server',
         'Maintaining a CRM system to be used by company\'s employees',
         'Attempt to deploy production ready server with load balancing traefik & grafana as monitoring system',
         'Using flutter, managed to implement realtime tracking order & chat system using firebase & rocketchat as well as on backend for their marketplace app',
