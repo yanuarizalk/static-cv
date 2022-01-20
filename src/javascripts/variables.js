@@ -8,6 +8,19 @@ module.exports = {
   address: 'Surakarta, Indonesia',
   google_place: 'Surakarta,+Surakarta+City,+Central+Java/@-7.5592034,110.7487715,12z/data=!3m1!4b1!4m5!3m4!1s0x2e7a16627ad11ab1:0xe7fe4e0454bc3095!8m2!3d-7.5754887!4d110.8243272',
   description: 'I am a software engineer with wide & deep expertise in many technologies.\n With those commitment, i try to produce the best developing experience not just for consumers, but also for the developer itself.',
+  techs: [
+    'SQL', 'Javascript', 'PHP', 'Kotlin', 'Dart', '.NET', 'VB',
+    'Node JS', 'Laravel', 'Livewire', 'Tailwind CSS', 'EF Core', 'GetX', 'React JS', 'Alpine JS',
+    'Docker', 'Parse Server', 'Traefik', 'Firebase', 'Git', 'Linux',
+    /* {
+      ecosystem: [
+        'SQL'
+      ],
+      services: [
+
+      ],
+    }, */
+  ],
   educations: [
     {
       institution: 'SMK Negeri 2 Surakarta',

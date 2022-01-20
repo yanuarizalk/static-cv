@@ -18,7 +18,7 @@ Alpine.data('variables', () => variables);
 console.log(`
   As u can see, i make this cv using tailwind & alpine as core program.\n
 
-  I am only using custom css to add (.) point suffix inside list element LOL.
+  I am only used custom css to add (.) point suffix inside list element LOL.
 `);
 
 

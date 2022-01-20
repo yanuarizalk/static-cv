@@ -7,7 +7,7 @@
 
 </head>
 <body x-init="" x-data="variables">
-  <div class="max-w-5xl shadow-lg shadow-black lg:mx-64 lg:drop-shadow-lg">
+  <div class="max-w-5xl my-0 shadow-lg lg:my-4 shadow-gray lg:mx-64 lg:drop-shadow-lg">
     <div class="flex flex-col items-center py-4 text-gray-200 bg-gray-800">
       <div class="pt-12 pb-10 font-mono text-3xl lg:text-5xl lg:pt-14 lg:pb-12">
         Yanuarizal K.
@@ -89,6 +89,11 @@
         <div class="mb-2 text-lg font-bold">
           Technologies <hr />
         </div>
+        <ul class="ml-4 list-disc columns-3">
+          <template x-for="tech in techs">
+            <li class="text-sm" x-text="tech"></li>
+          </template>
+        </ul>
       </div>
     </div>
   </div>
