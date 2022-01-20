@@ -142,6 +142,9 @@ module.exports = [
   config.env === 'production' && sitemap,
   config.googleAnalyticsUA && google,
   webpackBar,
+  new webpack.ContextReplacementPlugin(
+    /date-fns[/\\]/, new RegExp(`[/\\\\](${['en-US'].join('|')})[/\\\\]index.js$`),
+  ),
   new SizePlugin(),
   new BundleAnalyzerPlugin(),
   config.env === 'development' && hmr,

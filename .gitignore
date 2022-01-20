@@ -1,6 +1,9 @@
 ## Project
 dist/*
 
+## Bundler
+size-plugin.json
+
 ## Node.js
 lib-cov
 *.seed
@@ -33,3 +36,4 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+

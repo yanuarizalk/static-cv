@@ -90,6 +90,7 @@
     "axios": "^0.21.4",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
+    "date-fns": "^2.28.0",
     "enquirer": "^2.3.6",
     "figlet": "^1.2.3",
     "ftp-deploy": "^2.4.1",

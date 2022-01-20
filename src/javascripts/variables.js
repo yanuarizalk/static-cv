@@ -1,6 +1,7 @@
-const methods = require('./methods');
+// const methods = require('./methods');
+import methods from './methods';
 
-module.exports = {
+export default {
   mobile: '+6281377232136',
   email: 'me@yanuarizal.net',
   github_username: 'yanuarizalk',

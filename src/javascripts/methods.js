@@ -1,8 +1,14 @@
-module.exports = {
+import { locale } from 'date-fns/locale/en-US/index';
+import format from 'date-fns/fp/format';
+
+export default {
   toWhatsapp: (value) => `https://wa.me/${value}`,
   mailTo: (value) => `mailto:${value}`,
   toPlace: (value) => `https://www.google.com/maps/place/${value}`,
   toGithub: (value) => `https://github.com/${value}`,
-  // eslint-disable-next-line no-undef
-  toDate: (fromDate, toDate) => `${moment(fromDate).format('YYYY MMM')} - ${moment(toDate).format('YYYY MMM')}`,
+  toDate: (fromDate, tillDate) => `${format(fromDate, 'yyyy MMM', {
+    locale,
+  })} - ${format(tillDate, 'yyyy MMM', {
+    locale,
+  })}`,
 };
