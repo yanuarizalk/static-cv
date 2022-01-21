@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 import { faAt } from '@fortawesome/free-solid-svg-icons/faAt';
@@ -8,6 +8,7 @@ import Alpine from 'alpinejs';
 import variables from './variables';
 
 library.add(faEnvelope, faPhone, faAt, faGithub);
+dom.watch();
 
 window.Alpine = Alpine;
 
@@ -19,6 +20,8 @@ console.log(`
   I am trying to minify it as best as i can.
 
   I am only used custom css to add (.) point suffix inside list element LOL.
+
+  Available @ https://github.com/yanuarizalk/static-cv
 `);
 
 Alpine.start();
