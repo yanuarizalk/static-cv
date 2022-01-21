@@ -1,14 +1,14 @@
 import { locale } from 'date-fns/locale/en-US/index';
-import format from 'date-fns/fp/format';
+import { formatWithOptions } from 'date-fns/fp';
 
 export default {
   toWhatsapp: (value) => `https://wa.me/${value}`,
   mailTo: (value) => `mailto:${value}`,
   toPlace: (value) => `https://www.google.com/maps/place/${value}`,
   toGithub: (value) => `https://github.com/${value}`,
-  toDate: (fromDate, tillDate) => `${format(fromDate, 'yyyy MMM', {
+  toDate: (fromDate, tillDate) => `${formatWithOptions({
     locale,
-  })} - ${format(tillDate, 'yyyy MMM', {
+  }, 'yyyy MMM', fromDate)} - ${formatWithOptions({
     locale,
-  })}`,
+  }, 'yyyy MMM', tillDate)}`,
 };
