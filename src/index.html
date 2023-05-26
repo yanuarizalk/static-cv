@@ -33,10 +33,10 @@
       </div>
     </div>
 
-    <div class="flex flex-col p-8 space-y-4 bg-white">
-      <pre id="describe" class="my-8 italic text-center whitespace-pre-line" x-text="description"></pre>
+    <div class="flex flex-col p-8 space-y-4 text-gray-700 bg-white">
+      <pre id="describe" class="my-8 italic text-center text-gray-800 whitespace-pre-line" x-text="description"></pre>
       <div id="experience" class="">
-        <div class="mb-2 text-lg font-bold">
+        <div class="mb-2 text-lg font-bold text-gray-800">
           Work Experiences <hr />
         </div>
         <template x-for="exp in experiences">
@@ -56,7 +56,7 @@
         </template>
       </div>
       <div id="education" class="">
-        <div class="mb-2 text-lg font-bold">
+        <div class="mb-2 text-lg font-bold text-gray-800">
           Educations <hr />
         </div>
         <template x-for="exp in educations">
@@ -73,20 +73,8 @@
           </div>
         </template>
       </div>
-      <!-- <div class="flex space-x-8">
-        <div id="skill" class="flex-auto text-center">
-          <div class="mb-2 text-lg font-bold">
-            Skills <hr />
-          </div>
-        </div>
-        <div id="tech" class="flex-auto text-center">
-          <div class="mb-2 text-lg font-bold">
-            Technologies <hr />
-          </div>
-        </div>
-      </div> -->
       <div id="tech" class="">
-        <div class="mb-2 text-lg font-bold">
+        <div class="mb-2 text-lg font-bold text-gray-800">
           Technologies <hr />
         </div>
         <ul class="ml-4 list-disc columns-3">
@@ -94,6 +82,21 @@
             <li class="text-sm" x-text="tech"></li>
           </template>
         </ul>
+      </div>
+      <div id="cert" class="">
+        <div class="mb-2 text-lg font-bold text-gray-800">
+          Certificates <hr />
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <template x-for="cert in certificates">
+            <figure x-data="{ alt: cert.name + ' - ' + cert.issuer }" class="m-auto my-4 text-center basis-2/5 hover:underline">
+              <a class="" :href="cert.link" target="_blank">
+                <img :src="cert.image" :alt="alt">
+                <figcaption class="text-xs italic text-gray-600" x-text="cert.name"></figcaption>
+              </a>
+            </figure>
+          </template>
+        </div>
       </div>
     </div>
   </div>
