@@ -19,8 +19,6 @@ console.log(`
   As u can see, i make this cv using tailwind & alpine as core program.\n
   I am trying to minify it as best as i can.
 
-  I am only used custom css to add (.) point suffix inside list element LOL.
-
   Available @ https://github.com/yanuarizalk/static-cv
 `);
 
