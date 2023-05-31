@@ -9,8 +9,13 @@
 <body x-init="" x-data="variables">
   <div class="max-w-5xl mx-auto my-0 shadow-lg lg:my-4 shadow-gray lg:drop-shadow-lg">
     <div class="flex flex-col items-center py-4 text-gray-200 bg-gray-800">
-      <div class="pt-12 pb-10 font-mono text-3xl lg:text-5xl lg:pt-14 lg:pb-12">
-        Yanuarizal K.
+      <div class="pt-12 pb-10 text-center lg:pt-14 lg:pb-12">
+        <div class="font-mono text-3xl lg:text-5xl">
+          Yanuarizal K.
+        </div>
+        <div class="text-sm italic">
+          Software Engineer / Backend Specialist
+        </div>
       </div>
       <div class="flex flex-row items-center space-x-8 text-sm">
         <a id="email" class="flex items-center space-x-2" :href="methods.mailTo(email)">
@@ -75,9 +80,15 @@
       </div>
       <div id="tech" class="">
         <div class="mb-2 text-lg font-bold text-gray-800">
-          Technologies <hr />
+          Technologies
+          <div class="invisible float-right mt-3 text-xs">
+            <ul class="" style="list-style-type: '- ';">
+              <li class="italic font-bold">Mostly used</li>
+            </ul>
+          </div>
+          <hr />
         </div>
-        <ul class="ml-4 list-disc columns-3">
+        <ul class="ml-4 list-disc md:columns-3 columns-2">
           <template x-for="tech in techs">
             <li class="text-sm" x-text="tech"></li>
           </template>

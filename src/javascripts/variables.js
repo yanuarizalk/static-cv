@@ -8,20 +8,12 @@ export default {
   website: 'yanuarizal.net',
   address: 'Surakarta, Indonesia',
   google_place: 'Surakarta,+Surakarta+City,+Central+Java/@-7.5592034,110.7487715,12z/data=!3m1!4b1!4m5!3m4!1s0x2e7a16627ad11ab1:0xe7fe4e0454bc3095!8m2!3d-7.5754887!4d110.8243272',
-  description: 'I am a software engineer with wide & deep expertise in many technologies.\n With those commitment, i try to produce the best developing experience not just for consumers, but also for the developer itself.',
+  description: 'Desired to master numerous technologies & deepens expertise through well-documented software. \n With those commitments, i want to try to deliver the best developing experience not just for consumers, but also for the developers themselves.',
   techs: [
-    'Javascript', 'PHP', 'Kotlin', 'Dart', '.NET', 'VB', 'Golang',
-    'SQL', 'NoSQL', 'Influx 1x',
-    'Node JS', 'Laravel', 'Livewire', 'Tailwind CSS', 'EF Core', 'GetX', 'React JS', 'Alpine JS',
-    'Docker', 'Parse Server', 'Traefik', 'Firebase', 'Git', 'Linux',
-    /* {
-      ecosystem: [
-        'SQL'
-      ],
-      services: [
-
-      ],
-    }, */
+    'Javascript', 'Golang', 'PHP', 'C#/.NET', 'VB', 'Dart',
+    'SQL Server', 'Mysql', 'Influx 1x', 'Mongo', 'Hive',
+    'Express', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
+    'Linux', 'Git', 'Docker', 'Jenkins', 'Firebase', 'RabbitMQ / MQTT', 'Traefik', 'Kong',
   ],
   educations: [
     {
@@ -32,6 +24,7 @@ export default {
       do: [
         'Reaching class rank from bottom to atleast top 6, in which the progress is increasing on every semester',
         'As semester exams, managed to make realtime chat room using plain socket protocol in Vb6',
+        'Create attendance system using fingerprint device in vb.net',
       ],
     },
     {
@@ -41,6 +34,8 @@ export default {
       ],
       do: [
         'Polishing web skills that have been taught already in highschool for 3 months',
+        'Implement Point of Sale system from existing design',
+        'Internship at Akun.biz & got the job offer at the end of certification',
         'Pass & certified as web developer by Kemnaker',
       ],
     },
@@ -48,7 +43,7 @@ export default {
   experiences: [
     {
       company: 'PT. Tyfountex Indonesia',
-      as: 'IT Staff',
+      as: 'IT Staff, Software Engineer',
       since: [
         new Date(2019, 5), new Date(2019, 11),
       ],
@@ -60,7 +55,7 @@ export default {
     },
     {
       company: 'PT Sanityasa Anjaya Daniswara',
-      as: 'Fullstack Engineer',
+      as: 'Fullstack Developer',
       since: [
         new Date(2020, 1), new Date(2020, 5),
       ],
@@ -94,6 +89,7 @@ export default {
         'Maintenance & develop OEE & EMS services',
         'Bugfixing some bugs, ranging from patching to major fix',
         'Refactoring some code & reduce performance load by optimizing the logic system',
+        'Implementing new golang module as monorepo to unite & generalize reusable package across dependent services',
         'Responsible to train interns from Telkom university',
       ],
     },
@@ -102,21 +98,21 @@ export default {
     {
       name: 'Software Engineering Expertise Program',
       image: 'assets/certs/rpl.thumb.png',
-      link: 'assets/certs/rpl.pdf',
+      link: 'https://drive.google.com/file/d/1GLlieZ9-fypLw7cCCPKtQIUDwZBBLokI/view',
       issuer: 'AppsInTune',
       issued_date: new Date(2018, 5),
     },
     {
       name: 'Web Developer',
       image: 'assets/certs/blk.thumb.jpg',
-      link: 'assets/certs/blk.pdf',
+      link: 'https://drive.google.com/file/d/1r3jN_VXmzkH6nO7AgyOw1bNcGFl59Got/view?usp=sharing',
       issuer: 'BNSP Kemnaker',
       issued_date: new Date(2019, 5),
     },
     {
       name: 'Data Analytic',
       image: 'assets/certs/analytic.thumb.png',
-      link: 'assets/certs/analytic_google.pdf',
+      link: 'https://drive.google.com/file/d/1NKWug3kGlpGjAJ6MMORyLO0va5gseH8r/view',
       issuer: 'Google',
       issued_date: new Date(2023, 5),
     },
