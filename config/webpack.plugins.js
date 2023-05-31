@@ -16,6 +16,7 @@ const RobotstxtPlugin = require('robotstxt-webpack-plugin');
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 const SizePlugin = require('size-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const config = require('./site.config');
 
@@ -82,7 +83,7 @@ const sitemap = new SitemapPlugin(config.site_url, paths, {
 // Favicons
 const favicons = new FaviconsWebpackPlugin({
   logo: config.favicon,
-  prefix: 'images/favicons/',
+  prefix: 'assets/favicons/',
   favicons: {
     appName: config.site_name,
     appDescription: config.site_description,
@@ -131,6 +132,12 @@ const google = new GoogleAnalyticsPlugin({
   id: config.googleAnalyticsUA,
 });
 
+const copy = new CopyPlugin({
+  patterns: [
+    { from: 'assets', to: './assets' },
+  ],
+});
+
 module.exports = [
   clean,
   stylelint,
@@ -148,4 +155,5 @@ module.exports = [
   new SizePlugin(),
   new BundleAnalyzerPlugin(),
   config.env === 'development' && hmr,
+  config.env === 'production' && copy,
 ].filter(Boolean);
