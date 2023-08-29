@@ -20,19 +20,19 @@
       <div class="flex flex-row items-center space-x-8 text-sm">
         <a id="email" class="flex items-center space-x-2" :href="methods.mailTo(email)">
           <i class="fas fa-envelope"></i>
-          <div x-text="email" class="hidden md:block"></div>
+          <div x-text="email" class="hidden md:block print:block"></div>
         </a>
         <a id="mobile" href="#" class="flex items-center space-x-2" :href="methods.toWhatsapp(mobile)">
           <i class="fas fa-phone"></i>
-          <div x-text="mobile" class="hidden md:block"></div>
+          <div x-text="mobile" class="hidden md:block print:block"></div>
         </a>
         <a id="address" href="#" class="flex items-center space-x-2" :href="methods.toPlace(google_place)">
           <i class="fas fa-at"></i>
-          <div x-text="address" class="hidden md:block"></div>
+          <div x-text="address" class="hidden md:block print:block"></div>
         </a>
         <a id="github" href="#" class="flex items-center space-x-2" :href="methods.toGithub(github_username)">
           <i class="fab fa-github"></i>
-          <div x-text="github_username" class="hidden md:block"></div>
+          <div x-text="github_username" class="hidden md:block print:block"></div>
         </a>
 
       </div>
@@ -50,7 +50,7 @@
               <div class="font-bold basis-4/6 md:basis-auto" x-text="exp.company"></div>
               <div class="hidden md:block"> as </div>
               <div class="order-last text-sm italic md:text-base md:order-2 basis-full md:basis-auto" x-text="exp.as"></div>
-              <div class="order-2 text-xs font-light md:order-last basis-2/6 md:basis-auto" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
+              <div class="order-2 text-xs font-light text-right md:order-last basis-2/6 md:basis-auto" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
             </div>
             <ul class="ml-4 list-disc">
               <template x-for="todo in exp.do">
