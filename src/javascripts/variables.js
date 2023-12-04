@@ -131,6 +131,13 @@ export default {
       issuer: 'Alibaba',
       issued_date: new Date(2023, 10),
     },
+    {
+      name: 'Alibaba Big Data Professional',
+      image: 'assets/certs/abdp.thumb.jpg',
+      link: 'https://aliyun-aps-cloud-public.oss-cn-hangzhou.aliyuncs.com/img_68557f8d06189a27fbf3e9c13ca48c79.jpg',
+      issuer: 'Alibaba',
+      issued_date: new Date(2023, 12),
+    },
   ],
   methods,
 };
