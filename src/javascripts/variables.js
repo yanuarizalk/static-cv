@@ -43,7 +43,7 @@ export default {
   experiences: [
     {
       company: 'PT. Tyfountex Indonesia',
-      as: 'IT Staff, Software Engineer',
+      as: 'IT Staff, Fullstack Software Engineer',
       since: [
         new Date(2019, 5), new Date(2019, 11),
       ],
@@ -92,6 +92,20 @@ export default {
         'Implementing new golang module as monorepo to unite & generalize reusable package across dependent services',
         'Integrate data sensor from iot cloud platform, eg: Telkom IOT & Antares',
         'Responsible to train interns from various universities',
+      ],
+    },
+    {
+      company: 'Solusi Sentral Data',
+      as: 'Backend Engineer',
+      since: [
+        new Date(2024, 1), Date.now(),
+      ],
+      do: [
+        'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform',
+        'Help migrate old monolithic web system to new micro services',
+        'Bugfixing some bugs, ranging from patching to major fix',
+        'Enhance long process performance by fixing flaw logic, using correct indexing, paralleling multiple task, and more.',
+        'Initiate & propose new development cycle to ease engineer\'s works',
       ],
     },
   ],
