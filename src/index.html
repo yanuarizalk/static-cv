@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Yanuarizal's CV</title>
   <meta name="description" content="" />
 
 </head>
+
 <body x-init="" x-data="variables">
-  <div class="max-w-5xl mx-auto my-0 shadow-lg lg:my-4 shadow-gray lg:drop-shadow-lg print:m-0 print:my-0 print:w-full print:max-w-none print:shadow-none">
+  <div
+    class="max-w-5xl mx-auto my-0 shadow-lg lg:my-4 shadow-gray lg:drop-shadow-lg print:m-0 print:my-0 print:w-full print:max-w-none print:shadow-none">
     <div class="flex flex-col items-center py-4 text-gray-200 bg-gray-800">
       <div class="pt-12 pb-10 text-center lg:pt-14 lg:pb-12">
         <div class="font-mono text-3xl lg:text-5xl">
@@ -42,15 +45,18 @@
       <pre id="describe" class="my-8 italic text-center text-gray-800 whitespace-pre-line" x-text="description"></pre>
       <div id="experience" class="">
         <div class="mb-2 text-lg font-bold text-gray-800 title">
-          Work Experiences <hr />
+          Work Experiences
+          <hr />
         </div>
         <template x-for="exp in experiences">
           <div class="mb-4 break-inside-avoid-page">
             <div class="flex flex-row flex-wrap items-center space-x-0 md:space-x-1 md:flex-nowrap">
               <div class="font-bold basis-4/6 md:basis-auto" x-text="exp.company"></div>
               <div class="hidden md:block"> as </div>
-              <div class="order-last text-sm italic md:text-base md:order-2 basis-full md:basis-auto" x-text="exp.as"></div>
-              <div class="order-2 text-xs font-light text-right md:order-last basis-2/6 md:basis-auto" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
+              <div class="order-last text-sm italic md:text-base md:order-2 basis-full md:basis-auto" x-text="exp.as">
+              </div>
+              <div class="order-2 text-xs font-light text-right md:order-last basis-2/6 md:basis-auto"
+                style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
             </div>
             <ul class="ml-4 list-disc">
               <template x-for="todo in exp.do">
@@ -62,13 +68,15 @@
       </div>
       <div id="education" class="break-inside-avoid-page">
         <div class="mb-2 text-lg font-bold text-gray-800 title">
-          Educations <hr />
+          Educations
+          <hr />
         </div>
         <template x-for="exp in educations">
           <div class="mb-4">
             <div class="flex flex-row space-x-1">
               <div class="font-bold" x-text="exp.institution"></div>
-              <div class="text-xs font-light" style="margin-left: auto;" x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
+              <div class="text-xs font-light" style="margin-left: auto;"
+                x-text="methods.toDate(exp.since[0], exp.since[1])"></div>
             </div>
             <ul class="ml-4 list-disc">
               <template x-for="todo in exp.do">
@@ -96,11 +104,13 @@
       </div>
       <div id="cert" class="break-before-page">
         <div class="mb-2 text-lg font-bold text-gray-800 title">
-          Certificates <hr />
+          Certificates
+          <hr />
         </div>
         <div class="flex flex-wrap justify-center">
           <template x-for="cert in certificates">
-            <figure x-data="{ alt: cert.name + ' - ' + cert.issuer }" class="mx-auto my-4 text-center center lg:basis-2/5 basis-4/5 hover:underline break-inside-avoid">
+            <figure x-data="{ alt: cert.name + ' - ' + cert.issuer }"
+              class="mx-auto my-4 text-center center lg:basis-2/5 basis-4/5 hover:underline break-inside-avoid">
               <a class="inline-block" :href="cert.link" target="_blank">
                 <img :src="cert.image" :alt="alt">
                 <figcaption class="text-xs italic text-gray-600" x-text="cert.name"></figcaption>
@@ -109,7 +119,15 @@
           </template>
         </div>
       </div>
+      <div>
+        <hr />
+        <div class="text-xs text-right">
+          <a href="https://cv.yanuarizal.net" class="font-thin">cv.yanuarizal.net</a>
+        </div>
+      </div>
     </div>
+
   </div>
 </body>
+
 </html>
