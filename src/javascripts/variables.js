@@ -98,7 +98,7 @@ export default {
       company: 'Solusi Sentral Data',
       as: 'Backend Engineer',
       since: [
-        new Date(2024, 1), Date.now(),
+        new Date(2024, 1), new Date(2024, 7),
       ],
       do: [
         'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform (C# .Net)',
