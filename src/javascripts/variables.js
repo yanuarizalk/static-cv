@@ -10,10 +10,10 @@ export default {
   google_place: 'Surakarta,+Surakarta+City,+Central+Java/@-7.5592034,110.7487715,12z/data=!3m1!4b1!4m5!3m4!1s0x2e7a16627ad11ab1:0xe7fe4e0454bc3095!8m2!3d-7.5754887!4d110.8243272',
   description: 'Desired to master numerous technologies & deepens expertise through well-documented software. \n With those commitments, i want to try to deliver the best developing experience not just for consumers, but also for the developers themselves.',
   techs: [
-    'Javascript', 'Golang', 'PHP', 'C#/.NET', 'VB', 'Dart',
+    'Javascript/Typescript', 'Golang', 'PHP', 'C#', 'VB', 'Dart', 'Java', 'Kotlin',
     'SQL Server', 'Mysql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
-    'Express', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
-    'Linux', 'Git', 'Docker', 'Jenkins', 'Firebase', 'RabbitMQ / MQTT', 'Traefik', 'Kong',
+    '.Net (classic / core)', 'Express', 'NestJS', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
+    'Linux', 'Git', 'Docker', 'Jenkins', 'Firebase', 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
   ],
   educations: [
     {
@@ -61,7 +61,7 @@ export default {
       ],
       do: [
         'Reported some vulnerability API system before i was given the responsibility to see their logic system',
-        'Maintaining few web app revision from client',
+        'Maintaining few web app revision from clients(mostly used native & Codeigniter)',
         'Fixing & add more validation on purchasing from google play',
       ],
     },
@@ -73,9 +73,9 @@ export default {
       ],
       do: [
         'Setup network ecosystem, self hosted service like dns, mail, sms & etc on premise server',
-        'Maintaining a CRM system to be used by company\'s employees',
+        'Maintaining a CRM system to be used by company\'s employees (Laravel)',
         'Attempt to deploy production ready server with load balancing traefik & grafana as monitoring system',
-        'Using flutter, managed to implement realtime tracking order & chat system using firebase & parse server as well as on backend for their marketplace app',
+        'Using flutter, managed to implement realtime tracking order & chat system using firebase & parse server as well as on backend(NodeJS) for their marketplace app',
         'Responsible to train interns from UDB university',
       ],
     },
@@ -86,7 +86,7 @@ export default {
         new Date(2022, 2), Date.now(),
       ],
       do: [
-        'Maintenance & develop OEE, EMS & CMMS services',
+        'Maintenance & develop OEE, EMS & CMMS services (Go, NodeJS)',
         'Bugfixing some bugs, ranging from patching to major fix',
         'Refactoring some code, simplify syntax & reduce performance load by optimizing the logic system',
         'Implementing new golang module as monorepo to unite & generalize reusable package across dependent services',
@@ -101,7 +101,7 @@ export default {
         new Date(2024, 1), Date.now(),
       ],
       do: [
-        'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform',
+        'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform (C# .Net)',
         'Help migrate old monolithic web system to new micro services',
         'Bugfixing some bugs, ranging from patching to major fix',
         'Enhance long process performance by fixing flaw logic, using correct indexing, paralleling multiple task, and more.',
