@@ -83,7 +83,7 @@ export default {
       company: 'Evomo',
       as: 'Backend Engineer',
       since: [
-        new Date(2022, 2), Date.now(),
+        new Date(2022, 1), Date.now(),
       ],
       do: [
         'Maintenance & develop OEE, EMS & CMMS services (Go, NodeJS)',
@@ -98,7 +98,7 @@ export default {
       company: 'Solusi Sentral Data',
       as: 'Backend Engineer',
       since: [
-        new Date(2024, 1), new Date(2024, 7),
+        new Date(2024, 0), new Date(2024, 6),
       ],
       do: [
         'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform (C# .Net)',
