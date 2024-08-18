@@ -12,7 +12,7 @@ export default {
   techs: [
     'Javascript/Typescript', 'Golang', 'PHP', 'C#', 'VB', 'Dart', 'Java', 'Kotlin',
     'SQL Server', 'Mysql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
-    '.Net (classic / core)', 'Express', 'NestJS', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
+    '.Net (classic / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
     'Linux', 'Git', 'Docker', 'Jenkins', 'Firebase', 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
   ],
   educations: [
