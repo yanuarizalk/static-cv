@@ -83,7 +83,7 @@ export default {
       company: 'Evomo',
       as: 'Backend Engineer',
       since: [
-        new Date(2022, 1), Date.now(),
+        new Date(2022, 1), new Date(2024, 7),
       ],
       do: [
         'Maintenance & develop OEE, EMS & CMMS services (Go, NodeJS)',
