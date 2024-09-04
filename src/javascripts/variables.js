@@ -17,17 +17,6 @@ export default {
   ],
   educations: [
     {
-      institution: 'SMK Negeri 2 Surakarta',
-      since: [
-        new Date(2015, 5), new Date(2018, 4),
-      ],
-      do: [
-        'Reaching class rank from bottom to atleast top 6, in which the progress is increasing on every semester',
-        'As semester exams, managed to make realtime chat room using plain socket protocol in Vb6',
-        'Create attendance system using fingerprint device in vb.net',
-      ],
-    },
-    {
       institution: 'BLK Surakarta',
       since: [
         new Date(2019, 0), new Date(2019, 2),
@@ -39,44 +28,31 @@ export default {
         'Pass & certified as web developer by Kemnaker',
       ],
     },
+    {
+      institution: 'SMK Negeri 2 Surakarta',
+      since: [
+        new Date(2015, 5), new Date(2018, 4),
+      ],
+      do: [
+        'Reaching class rank from bottom to atleast top 6, in which the progress is increasing on every semester',
+        'As semester exams, managed to make realtime chat room using plain socket protocol in Vb6',
+        'Create attendance system using fingerprint device in vb.net',
+      ],
+    },
   ],
   experiences: [
     {
-      company: 'PT. Tyfountex Indonesia',
-      as: 'IT Staff, Fullstack Software Engineer',
+      company: 'Solusi Sentral Data',
+      as: 'Backend Engineer',
       since: [
-        new Date(2019, 5), new Date(2019, 11),
+        new Date(2024, 0), new Date(2024, 6),
       ],
       do: [
-        'Developed new reporting system with .NET technologies using DevExpress framework to revolutionize their monolith desktop based system',
-        'Doing some chore for maintaining & troubleshooting employee\'s computer',
-        'Establish attendance tracker system (Mobile) to help the security officer cycling around company',
-      ],
-    },
-    {
-      company: 'PT Sanityasa Anjaya Daniswara',
-      as: 'Fullstack Developer',
-      since: [
-        new Date(2020, 1), new Date(2020, 5),
-      ],
-      do: [
-        'Reported some vulnerability API system before i was given the responsibility to see their logic system',
-        'Maintaining few web app revision from clients(mostly used native & Codeigniter)',
-        'Fixing & add more validation on purchasing from google play',
-      ],
-    },
-    {
-      company: 'PT Daya Rekadigi Indonesia',
-      as: 'Backend Engineer, Mobile Developer & Sysadmin',
-      since: [
-        new Date(2020, 5), new Date(2022, 1),
-      ],
-      do: [
-        'Setup network ecosystem, self hosted service like dns, mail, sms & etc on premise server',
-        'Maintaining a CRM system to be used by company\'s employees (Laravel)',
-        'Attempt to deploy production ready server with load balancing traefik & grafana as monitoring system',
-        'Using flutter, managed to implement realtime tracking order & chat system using firebase & parse server as well as on backend(NodeJS) for their marketplace app',
-        'Responsible to train interns from UDB university',
+        'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform (C# .Net)',
+        'Help migrate old monolithic web system to new micro services',
+        'Bugfixing some bugs, ranging from patching to major fix',
+        'Enhance long process performance by fixing flaw logic, using correct indexing, paralleling multiple task, and more.',
+        'Initiate & propose new development cycle to ease engineer\'s works',
       ],
     },
     {
@@ -95,48 +71,51 @@ export default {
       ],
     },
     {
-      company: 'Solusi Sentral Data',
-      as: 'Backend Engineer',
+      company: 'PT Daya Rekadigi Indonesia',
+      as: 'Backend Engineer, Mobile Developer & Sysadmin',
       since: [
-        new Date(2024, 0), new Date(2024, 6),
+        new Date(2020, 5), new Date(2022, 1),
       ],
       do: [
-        'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform (C# .Net)',
-        'Help migrate old monolithic web system to new micro services',
-        'Bugfixing some bugs, ranging from patching to major fix',
-        'Enhance long process performance by fixing flaw logic, using correct indexing, paralleling multiple task, and more.',
-        'Initiate & propose new development cycle to ease engineer\'s works',
+        'Setup network ecosystem, self hosted service like dns, mail, sms & etc on premise server',
+        'Maintaining a CRM system to be used by company\'s employees (Laravel)',
+        'Attempt to deploy production ready server with load balancing traefik & grafana as monitoring system',
+        'Using flutter, managed to implement realtime tracking order & chat system using firebase & parse server as well as on backend(NodeJS) for their marketplace app',
+        'Responsible to train interns from UDB university',
+      ],
+    },
+    {
+      company: 'PT Sanityasa Anjaya Daniswara',
+      as: 'Fullstack Developer',
+      since: [
+        new Date(2020, 1), new Date(2020, 5),
+      ],
+      do: [
+        'Reported some vulnerability API system before i was given the responsibility to see their logic system',
+        'Maintaining few web app revision from clients(mostly used native & Codeigniter)',
+        'Fixing & add more validation on purchasing from google play',
+      ],
+    },
+    {
+      company: 'PT. Tyfountex Indonesia',
+      as: 'IT Staff, Fullstack Software Engineer',
+      since: [
+        new Date(2019, 5), new Date(2019, 11),
+      ],
+      do: [
+        'Developed new reporting system with .NET technologies using DevExpress framework to revolutionize their monolith desktop based system',
+        'Doing some chore for maintaining & troubleshooting employee\'s computer',
+        'Establish attendance tracker system (Mobile) to help the security officer cycling around company',
       ],
     },
   ],
   certificates: [
     {
-      name: 'Software Engineering Expertise Program',
-      image: 'assets/certs/rpl.thumb.png',
-      link: 'https://drive.google.com/file/d/1GLlieZ9-fypLw7cCCPKtQIUDwZBBLokI/view',
-      issuer: 'AppsInTune',
-      issued_date: new Date(2018, 5),
-    },
-    {
-      name: 'Web Developer',
-      image: 'assets/certs/blk.thumb.jpg',
-      link: 'https://drive.google.com/file/d/1r3jN_VXmzkH6nO7AgyOw1bNcGFl59Got/view?usp=sharing',
-      issuer: 'BNSP Kemnaker',
-      issued_date: new Date(2019, 5),
-    },
-    {
-      name: 'Google Data Analytic',
-      image: 'assets/certs/analytic.thumb.png',
-      link: 'https://drive.google.com/file/d/1NKWug3kGlpGjAJ6MMORyLO0va5gseH8r/view',
-      issuer: 'Google',
-      issued_date: new Date(2023, 5),
-    },
-    {
-      name: 'Alibaba Cloud Computing Associate',
-      image: 'assets/certs/aca.thumb.jpg',
-      link: 'https://xuecdn2.aliyunedu.net/img_e021d36b01802518a80da5ab087d3115.jpg',
+      name: 'Alibaba Big Data Professional',
+      image: 'assets/certs/abdp.thumb.jpg',
+      link: 'https://aliyun-aps-cloud-public.oss-cn-hangzhou.aliyuncs.com/img_68557f8d06189a27fbf3e9c13ca48c79.jpg',
       issuer: 'Alibaba',
-      issued_date: new Date(2023, 6),
+      issued_date: new Date(2023, 12),
     },
     {
       name: 'Alibaba Big Data Associate',
@@ -146,11 +125,32 @@ export default {
       issued_date: new Date(2023, 10),
     },
     {
-      name: 'Alibaba Big Data Professional',
-      image: 'assets/certs/abdp.thumb.jpg',
-      link: 'https://aliyun-aps-cloud-public.oss-cn-hangzhou.aliyuncs.com/img_68557f8d06189a27fbf3e9c13ca48c79.jpg',
+      name: 'Alibaba Cloud Computing Associate',
+      image: 'assets/certs/aca.thumb.jpg',
+      link: 'https://xuecdn2.aliyunedu.net/img_e021d36b01802518a80da5ab087d3115.jpg',
       issuer: 'Alibaba',
-      issued_date: new Date(2023, 12),
+      issued_date: new Date(2023, 6),
+    },
+    {
+      name: 'Google Data Analytic',
+      image: 'assets/certs/analytic.thumb.png',
+      link: 'https://drive.google.com/file/d/1NKWug3kGlpGjAJ6MMORyLO0va5gseH8r/view',
+      issuer: 'Google',
+      issued_date: new Date(2023, 5),
+    },
+    {
+      name: 'Web Developer',
+      image: 'assets/certs/blk.thumb.jpg',
+      link: 'https://drive.google.com/file/d/1r3jN_VXmzkH6nO7AgyOw1bNcGFl59Got/view?usp=sharing',
+      issuer: 'BNSP Kemnaker',
+      issued_date: new Date(2019, 5),
+    },
+    {
+      name: 'Software Engineering Expertise Program',
+      image: 'assets/certs/rpl.thumb.png',
+      link: 'https://drive.google.com/file/d/1GLlieZ9-fypLw7cCCPKtQIUDwZBBLokI/view',
+      issuer: 'AppsInTune',
+      issued_date: new Date(2018, 5),
     },
   ],
   methods,
