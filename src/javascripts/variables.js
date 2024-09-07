@@ -12,9 +12,111 @@ export default {
   techs: [
     'Javascript/Typescript', 'Golang', 'PHP', 'C#', 'VB', 'Dart', 'Java', 'Kotlin',
     'SQL Server', 'Mysql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
-    '.Net (classic / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
-    'Linux', 'Git', 'Docker', 'Jenkins', 'Firebase', 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
+    '.Net (classic / core)', 'ExpressJS', 'NestJS', 'Sequelize', 'React', 'AlpineJS', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
+    'Linux', 'Git', 'Docker', 'Jenkins', 'Firebase', "GCP", "ABC", 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
   ],
+  projects: [
+    {
+      name: "Infoss Platform",
+      link: "https://infoss.solusisentraldata.com",
+      period: {
+        start: new Date(2024, 0), end: new Date(2024, 5)
+      },
+      description: "ERP Logistic system that focused on export import business",
+      techs: [
+        "C# .Net", "Dapper", "Crystal report", "Sql Server", "Stored procedure", "Service broker"
+      ]
+    },
+    {
+      name: "Environmental Monitoring System",
+      link: "https://evomo.id",
+      period: {
+        start: new Date(2022, 1), end: new Date(2024, 7)
+      },
+      description: "An integrated monitoring system to keep in track environment things",
+      techs: [
+        "Go", "NodeJs", "Gin", "Express", "Redis", "RabbitMq", "Minio", "Kong", "Docker", "Jenkins"
+      ]
+    },
+    {
+      name: "OEE Monitoring System",
+      link: "https://evomo.id",
+      period: {
+        start: new Date(2022, 1), end: new Date(2024, 5)
+      },
+      description: "An integrated monitoring system to analyze overall equipment effectiveness of factory's machines",
+      techs: [
+        "Go", "NodeJs", "Gin", "Express", "Redis", "RabbitMq", "Minio", "Kong", "Docker", "Jenkins"
+      ]
+    },
+    {
+      name: "Baba.id",
+      link: "https://baba.id",
+      period: {
+        start: new Date(2021, 8), end: new Date(2021, 11)
+      },
+      description: "SASS CRM system, primarily used for attendance & organize tasks for internal company",
+      techs: [
+        "PHP", "Html", "Css", "Bootstrap", "Javascript"
+      ]
+    },
+    {
+      name: "GAS Indonesia",
+      link: "https://play.google.com/store/apps/details?id=id.gas.app",
+      period: {
+        start: new Date(2020, 6), end: new Date(2021, 11)
+      },
+      description: "Marketplace mobile based application that prioritizing end to end customers interaction & helpful communication using in-app chat & realtime tracking order",
+      techs: [
+        "Flutter", "Kotlin", "Node Js", "PHP", "Parse Server", "Google Map & GeoLocation API", "OnPremise server", "Synology"
+      ]
+    },
+    {
+      name: "Sahabat Putra Dua",
+      link: "https://www.sahabatputradua.com/",
+      period: {
+        start: new Date(2020, 3), end: new Date(2020, 5)
+      },
+      description: "Web application to manage inventory, cashier & report intented for jewelry store",
+      techs: [
+        "PHP", "Html", "Css", "Javascript", "Jquery", "Mysql"
+      ]
+    },
+    {
+      name: "Akun.biz",
+      link: "https://play.google.com/store/apps/details?id=biz.akun.apps",
+      period: {
+        start: new Date(2020, 3), end: new Date(2020, 5)
+      },
+      description: "An online cash book mobile application that can be used to record cash income & expense",
+      techs: [
+        "Cordova - Webview", "PHP", "Jquery", "Mysql", "Google Play API"
+      ]
+    },
+    {
+      name: "Attendance Tracking System",
+      link: null,
+      period: {
+        start: new Date(2019, 10), end: new Date(2019, 11)
+      },
+      description: "Mobile application for fellow Tyfountex securities to help them automatically checkin when in department region, utilizing defined map zone",
+      techs: [
+        "Java", "PHP", "Google Map API"
+      ]
+    },
+    {
+      name: "Financial Reporting System",
+      link: "https://github.yanuarizal.net/asp_reports",
+      period: {
+        start: new Date(2019, 6), end: new Date(2019, 11)
+      },
+      description: "A reporting system to view periodical financial company data",
+      techs: [
+        "C# .Net Core", "Entity Framework", "DevExpress", "ASP.NET",
+        "Sql Server", "Fast Report"
+      ]
+    },
+  ], 
   educations: [
     {
       institution: 'BLK Surakarta',
@@ -80,7 +182,7 @@ export default {
         'Setup network ecosystem, self hosted service like dns, mail, sms & etc on premise server',
         'Maintaining a CRM system to be used by company\'s employees (Laravel)',
         'Attempt to deploy production ready server with load balancing traefik & grafana as monitoring system',
-        'Using flutter, managed to implement realtime tracking order & chat system using firebase & parse server as well as on backend(NodeJS) for their marketplace app',
+        'Using flutter combined kotlin, managed to implement realtime tracking order & chat system using firebase & parse server as well as on backend(NodeJS) for their marketplace app',
         'Responsible to train interns from UDB university',
       ],
     },
