@@ -13,7 +13,7 @@ export default {
     'Javascript/Typescript', 'Golang', 'PHP', 'C#', 'VB', 'Dart', 'Java', 'Kotlin',
     'SQL Server', 'Mysql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
     '.Net (classic / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
-    'Linux', 'Git', 'Docker', 'Jenkins', 'Firebase', 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
+    'Linux', 'Git', 'Docker / Kube', 'Jenkins', 'Firebase', 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
   ],
   educations: [
     {
@@ -106,6 +106,31 @@ export default {
         'Bugfixing some bugs, ranging from patching to major fix',
         'Enhance long process performance by fixing flaw logic, using correct indexing, paralleling multiple task, and more.',
         'Initiate & propose new development cycle to ease engineer\'s works',
+      ],
+    },
+    {
+      company: 'Accelist Lentera Indonesia',
+      as: 'Fullstack Engineer',
+      since: [
+        new Date(2024, 8), new Date(2025, 8),
+      ],
+      do: [
+        'Setup test suites & cases for SIT acceptance of logistic project',
+        'Outsourced @ AdIns as business partner to meet project goals needs',
+      ],
+    },
+    {
+      company: 'Advance Innovations',
+      as: 'Fullstack Engineer',
+      since: [
+        new Date(2024, 8), new Date(2025, 8),
+      ],
+      do: [
+        'Develop & deliver enhanced project named Confins R3',
+        'Implement things & features as specified within FSD from SA concerned',
+        'Ensure the deliverance of project from SIT & UAT behaving well before it\'s come to production',
+        'Being on multiple teams, helping them to achieve objectives such as resolve & improve things',
+        'Research & develop guide to utilize AI for making numerous test cases to lighten associate\'s workload'
       ],
     },
   ],
