@@ -11,8 +11,8 @@ export default {
   description: 'Desired to master numerous technologies & deepens expertise through well-documented software. \n With those commitments, i want to try to deliver the best developing experience not just for consumers, but also for the developers themselves.',
   techs: [
     'Javascript/Typescript', 'Golang', 'PHP', 'C#', 'VB', 'Dart', 'Java', 'Kotlin',
-    'SQL Server', 'Mysql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
-    '.Net (classic / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
+    'SQL Server', 'PostgreSql', 'MySql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
+    '.Net (classic / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Angular', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
     'Linux', 'Git', 'Docker / Kube', 'Jenkins', 'Firebase', 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
   ],
   educations: [
@@ -130,7 +130,7 @@ export default {
         'Implement things & features as specified within FSD from SA concerned',
         'Ensure the deliverance of project from SIT & UAT behaving well before it\'s come to production',
         'Being on multiple teams, helping them to achieve objectives such as resolve & improve things',
-        'Research & develop guide to utilize AI for making numerous test cases to lighten associate\'s workload'
+        'Research & develop guide to utilize AI for making numerous test cases to lighten associate\'s workload',
       ],
     },
   ],
