@@ -48,7 +48,7 @@
           Work Experiences
           <hr />
         </div>
-        <template x-for="exp in experiences">
+        <template x-for="exp in experiences.reverse()">
           <div class="mb-4 break-inside-avoid-page">
             <div class="flex flex-row flex-wrap items-center space-x-0 md:space-x-1 md:flex-nowrap">
               <div class="font-bold basis-4/6 md:basis-auto" x-text="exp.company"></div>
@@ -71,7 +71,7 @@
           Educations
           <hr />
         </div>
-        <template x-for="exp in educations">
+        <template x-for="exp in educations.reverse()">
           <div class="mb-4">
             <div class="flex flex-row space-x-1">
               <div class="font-bold" x-text="exp.institution"></div>
@@ -108,7 +108,7 @@
           <hr />
         </div>
         <div class="flex flex-wrap justify-center">
-          <template x-for="cert in certificates">
+          <template x-for="cert in certificates.reverse()">
             <figure x-data="{ alt: cert.name + ' - ' + cert.issuer }"
               class="mx-auto my-4 text-center center lg:basis-2/5 basis-4/5 hover:underline break-inside-avoid">
               <a class="inline-block" :href="cert.link" target="_blank">
