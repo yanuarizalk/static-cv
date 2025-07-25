@@ -144,6 +144,31 @@ export default {
   ],
   experiences: [
     {
+      company: 'Advance Innovations',
+      as: 'Fullstack Engineer',
+      since: [
+        new Date(2024, 8), new Date(2025, 8),
+      ],
+      do: [
+        'Develop & deliver enhanced project named Confins R3',
+        'Implement things & features as specified within FSD from SA concerned',
+        'Ensure the deliverance of project from SIT & UAT behaving well before it\'s come to production',
+        'Being on multiple teams, helping them to achieve objectives such as resolve & improve things',
+        'Research & develop guide to utilize AI for making numerous test cases to lighten associate\'s workload',
+      ],
+    },
+    {
+      company: 'Accelist Lentera Indonesia',
+      as: 'Fullstack Engineer',
+      since: [
+        new Date(2024, 8), new Date(2025, 8),
+      ],
+      do: [
+        'Setup test suites & cases for SIT acceptance of logistic project',
+        'Outsourced @ AdIns as business partner to meet project goals needs',
+      ],
+    },
+    {
       company: 'Solusi Sentral Data',
       as: 'Backend Engineer',
       since: [
@@ -208,31 +233,6 @@ export default {
         'Developed new reporting system with .NET technologies using DevExpress framework to revolutionize their monolith desktop based system',
         'Doing some chore for maintaining & troubleshooting employee\'s computer',
         'Establish attendance tracker system (Mobile) to help the security officer cycling around company',
-      ],
-    },
-    {
-      company: 'Accelist Lentera Indonesia',
-      as: 'Fullstack Engineer',
-      since: [
-        new Date(2024, 8), new Date(2025, 8),
-      ],
-      do: [
-        'Setup test suites & cases for SIT acceptance of logistic project',
-        'Outsourced @ AdIns as business partner to meet project goals needs',
-      ],
-    },
-    {
-      company: 'Advance Innovations',
-      as: 'Fullstack Engineer',
-      since: [
-        new Date(2024, 8), new Date(2025, 8),
-      ],
-      do: [
-        'Develop & deliver enhanced project named Confins R3',
-        'Implement things & features as specified within FSD from SA concerned',
-        'Ensure the deliverance of project from SIT & UAT behaving well before it\'s come to production',
-        'Being on multiple teams, helping them to achieve objectives such as resolve & improve things',
-        'Research & develop guide to utilize AI for making numerous test cases to lighten associate\'s workload',
       ],
     },
   ],
