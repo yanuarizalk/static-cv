@@ -13,7 +13,7 @@ export default {
     'Javascript/Typescript', 'Golang', 'PHP', 'C#', 'VB', 'Dart', 'Java', 'Kotlin',
     'SQL Server', 'PostgreSql', 'MySql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
     '.Net (classic / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Angular', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
-    'Linux', 'Git', 'Docker / Kube', 'Jenkins', 'Firebase', 'GCP', 'ABC', 'RabbitMQ (Amqp / Mqtt)', 'Traefik', 'Kong',
+    'Linux', 'Git', 'Docker / Kube', 'Jenkins', 'Firebase', 'GCP', 'ABC', 'RabbitMQ (Amqp / Mqtt)', 'Grafana', 'Traefik', 'Kong',
   ],
   projects: [
     {
