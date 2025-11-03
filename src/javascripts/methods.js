@@ -6,5 +6,6 @@ export default {
   mailTo: (value) => `mailto:${value}`,
   toPlace: (value) => `https://www.google.com/maps/place/${value}`,
   toGithub: (value) => `https://github.com/${value}`,
+  toPortfolio: () => 'https://portfolio.yanuarizal.net',
   toDate: (fromDate, tillDate) => `${format('yyyy MMM', fromDate)} - ${format('yyyy MMM', tillDate)}`,
 };

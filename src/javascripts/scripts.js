@@ -4,10 +4,11 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 import { faAt } from '@fortawesome/free-solid-svg-icons/faAt';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
+import { faListAlt } from '@fortawesome/free-solid-svg-icons/faListAlt';
 import Alpine from 'alpinejs';
 import variables from './variables';
 
-library.add(faEnvelope, faPhone, faAt, faGithub);
+library.add(faEnvelope, faPhone, faAt, faGithub, faListAlt);
 dom.watch();
 
 window.Alpine = Alpine;

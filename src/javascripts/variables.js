@@ -11,111 +11,9 @@ export default {
   description: 'Desired to master numerous technologies & deepens expertise through well-documented software. \n With those commitments, i want to try to deliver the best developing experience not just for consumers, but also for the developers themselves.',
   techs: [
     'Javascript/Typescript', 'Golang', 'PHP', 'C#', 'VB', 'Dart', 'Java', 'Kotlin',
-    'SQL Server', 'PostgreSql', 'MySql', 'Influx 1x', 'Mongo', 'Hive', 'Redis',
-    '.Net (classic / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Angular', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
-    'Linux', 'Git', 'Docker / Kube', 'Jenkins', 'Firebase', 'GCP', 'ABC', 'RabbitMQ (Amqp / Mqtt)', 'Grafana', 'Traefik', 'Kong',
-  ],
-  projects: [
-    {
-      name: 'Infoss Platform',
-      link: 'https://infoss.solusisentraldata.com',
-      period: {
-        start: new Date(2024, 0), end: new Date(2024, 5)
-      },
-      description: 'ERP Logistic system that focused on export import business',
-      techs: [
-        'C# .Net', 'Dapper', 'Crystal report', 'Sql Server', 'Stored procedure', 'Service broker'
-      ]
-    },
-    {
-      name: 'Environmental Monitoring System',
-      link: 'https://evomo.id',
-      period: {
-        start: new Date(2022, 1), end: new Date(2024, 7)
-      },
-      description: 'An integrated monitoring system to keep in track environment things',
-      techs: [
-        'Go', 'NodeJs', 'Gin', 'Express', 'Redis', 'RabbitMq', 'Minio', 'Kong', 'Docker', 'Jenkins'
-      ]
-    },
-    {
-      name: 'OEE Monitoring System',
-      link: 'https://evomo.id',
-      period: {
-        start: new Date(2022, 1), end: new Date(2024, 5)
-      },
-      description: 'An integrated monitoring system to analyze overall equipment effectiveness of factory\'s machines',
-      techs: [
-        'Go', 'NodeJs', 'Gin', 'Express', 'Redis', 'RabbitMq', 'Minio', 'Kong', 'Docker', 'Jenkins'
-      ]
-    },
-    {
-      name: 'Baba.id',
-      link: 'https://baba.id',
-      period: {
-        start: new Date(2021, 8), end: new Date(2021, 11)
-      },
-      description: 'SASS CRM system, primarily used for attendance & organize tasks for internal company',
-      techs: [
-        'PHP', 'Html', 'Css', 'Bootstrap', 'Javascript'
-      ]
-    },
-    {
-      name: 'GAS Indonesia',
-      link: 'https://play.google.com/store/apps/details?id=id.gas.app',
-      period: {
-        start: new Date(2020, 6), end: new Date(2021, 11)
-      },
-      description: 'Marketplace mobile based application that prioritizing end to end customers interaction & helpful communication using in-app chat & realtime tracking order',
-      techs: [
-        'Flutter', 'Kotlin', 'Node Js', 'PHP', 'Parse Server', 'Google Map & GeoLocation API', 'OnPremise server', 'Synology'
-      ]
-    },
-    {
-      name: 'Sahabat Putra Dua',
-      link: 'https://www.sahabatputradua.com/',
-      period: {
-        start: new Date(2020, 3), end: new Date(2020, 5)
-      },
-      description: 'Web application to manage inventory, cashier & report intented for jewelry store',
-      techs: [
-        'PHP', 'Html', 'Css', 'Javascript', 'Jquery', 'Mysql'
-      ]
-    },
-    {
-      name: 'Akun.biz',
-      link: 'https://play.google.com/store/apps/details?id=biz.akun.apps',
-      period: {
-        start: new Date(2020, 3), end: new Date(2020, 5)
-      },
-      description: 'An online cash book mobile application that can be used to record cash income & expense',
-      techs: [
-        'Cordova - Webview', 'PHP', 'Jquery', 'Mysql', 'Google Play API'
-      ]
-    },
-    {
-      name: 'Attendance Tracking System',
-      link: null,
-      period: {
-        start: new Date(2019, 10), end: new Date(2019, 11)
-      },
-      description: 'Mobile application for fellow Tyfountex securities to help them automatically checkin when in department region, utilizing defined map zone',
-      techs: [
-        'Java', 'PHP', 'Google Map API'
-      ]
-    },
-    {
-      name: 'Financial Reporting System',
-      link: 'https://github.yanuarizal.net/asp_reports',
-      period: {
-        start: new Date(2019, 6), end: new Date(2019, 11)
-      },
-      description: 'A reporting system to view periodical financial company data',
-      techs: [
-        'C# .Net Core', 'Entity Framework', 'DevExpress', 'ASP.NET',
-        'Sql Server', 'Fast Report'
-      ],
-    },
+    'SQL Server', 'PostgreSql', 'MySql', 'Influx 1x', 'Mongo', 'Hive', 'Redis', 'RabbitMQ (Amqp / Mqtt)',
+    '.Net (framework / core)', 'Express', 'NestJS', 'Sequelize', 'React', 'Alpine', 'Angular', 'Parse Server', 'Gin', 'Laravel', 'Livewire', 'Lumen', 'EF Core', 'Dev Express', 'GetX', 'Tailwind CSS',
+    'Linux', 'Git', 'Docker / Kube', 'Jenkins', 'Firebase', 'GCP', 'ABC', 'Cloudflare', 'Wrangler', 'Grafana', 'Traefik', 'Kong', 'Camunda'
   ],
   educations: [
     {
@@ -186,7 +84,7 @@ export default {
       company: 'Evomo',
       as: 'Backend Engineer',
       since: [
-        new Date(2022, 1), new Date(2024, 7),
+        new Date(2022, 0), new Date(2025, 7),
       ],
       do: [
         'Maintenance & develop OEE, EMS & CMMS services (Go, NodeJS)',
