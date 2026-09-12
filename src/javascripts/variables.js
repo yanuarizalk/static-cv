@@ -48,11 +48,10 @@ export default {
         new Date(2024, 8), new Date(2025, 8),
       ],
       do: [
-        'Develop & deliver enhanced project named Confins R3',
-        'Implement things & features as specified within FSD from SA concerned',
-        'Ensure the deliverance of project from SIT & UAT behaving well before it\'s come to production',
-        'Being on multiple teams, helping them to achieve objectives such as resolve & improve things',
-        'Research & develop guide to utilize AI for making numerous test cases to lighten associate\'s workload',
+        'Engineered core enterprise finance modules for the Confins R3 platform, translating complex Functional Specification Documents (FSD) into reliable, production-grade microservices',
+        'Assist SIT & UAT deployment readiness pipelines, mitigating release defects before production rollout',
+        'Researched & integrated AI-assisted test-generation workflows, decreasing QA prep time and accelerating sprint delivery across cross-functional teams',
+        'Served as technical liaison across multiple product squads to unblock architectural bottlenecks and enforce code quality standards',
       ],
     },
     {
@@ -62,8 +61,8 @@ export default {
         new Date(2024, 8), new Date(2025, 8),
       ],
       do: [
-        'Setup test suites & cases for SIT acceptance of logistic project',
-        'Outsourced @ AdIns as business partner to meet project goals needs',
+        'Architected automated SIT acceptance test suites for enterprise logistics platforms, ensuring compliance with client business specifications',
+        'Collaborated closely with client stakeholders at AdIns to accelerate integration milestones and streamline third-party service dependencies',
       ],
     },
     {
@@ -73,11 +72,10 @@ export default {
         new Date(2024, 0), new Date(2024, 6),
       ],
       do: [
-        'Maintenance & develop an erp logistic system that focused on export & import business named Infoss Platform (C# .Net)',
-        'Help migrate old monolithic web system to new micro services',
-        'Bugfixing some bugs, ranging from patching to major fix',
-        'Enhance long process performance by fixing flaw logic, using correct indexing, paralleling multiple task, and more.',
-        'Initiate & propose new development cycle to ease engineer\'s works',
+        'Modernized the Infoss Platform (export/import ERP) by systematically decomposing monolithic legacy services into scalable C# .NET microservices',
+        'Optimized critical, long-running database queries and backend batch processes through targeted indexing, asynchronous concurrency, and parallel worker patterns',
+        'Diagnosed and resolved high-severity production defects, reducing system downtime and boosting end-user data integrity',
+        'Introduced standardized branching and sprint development cycles that improved internal developer velocity and team collaboration',
       ],
     },
     {
@@ -87,12 +85,11 @@ export default {
         new Date(2022, 0), new Date(2025, 7),
       ],
       do: [
-        'Maintenance & develop OEE, EMS & CMMS services (Go, NodeJS)',
-        'Bugfixing some bugs, ranging from patching to major fix',
-        'Refactoring some code, simplify syntax & reduce performance load by optimizing the logic system',
-        'Implementing new golang module as monorepo to unite & generalize reusable package across dependent services',
-        'Integrate data sensor from iot cloud platform, eg: Telkom IOT & Antares',
-        'Responsible to train interns from various universities',
+        'Developed and maintained industrial IoT microservices (OEE, EMS, and CMMS) utilizing Go & Node.js, processing continuous telemetry streams from Telkom IoT and Antares platforms',
+        'Architected a centralized Go monorepo to consolidate shared packages, cutting code duplication across dependent services',
+        'Refactored mission-critical data processing logic, reducing compute overhead & server memory pressure',
+        'Mentored & onboarded engineering interns, conducting structured code reviews and system architecture walkthroughs',
+        'Served as Technical Advisor for the 1 of Bangkit Academy Capstone Project, guiding student cohorts through implementing OEE & EMS solutions'
       ],
     },
     {
@@ -102,11 +99,10 @@ export default {
         new Date(2020, 5), new Date(2022, 1),
       ],
       do: [
-        'Setup network ecosystem, self hosted service like dns, mail, sms & etc on premise server',
-        'Maintaining a CRM system to be used by company\'s employees (Laravel)',
-        'Attempt to deploy production ready server with load balancing traefik & grafana as monitoring system',
-        'Using flutter combined kotlin, managed to implement realtime tracking order & chat system using firebase & parse server as well as on backend(NodeJS) for their marketplace app',
-        'Responsible to train interns from UDB university',
+        'Built an on-premise infrastructure ecosystem, configuring self-hosted DNS, mail, and internal service gateways',
+        'Engineered real-time order tracking and chat microservices using Node.js, Parse Server, Firebase, and native mobile bridges (Flutter/Kotlin)',
+        'Maintained internal CRM systems & mentored interns from UDB university on production deployment standards',
+        'Configured reverse-proxy routing & real-time observability using Traefik load balancing & Grafana telemetry dashboards'
       ],
     },
     {
@@ -116,9 +112,9 @@ export default {
         new Date(2020, 1), new Date(2020, 5),
       ],
       do: [
-        'Reported some vulnerability API system before i was given the responsibility to see their logic system',
-        'Maintaining few web app revision from clients(mostly used native & Codeigniter)',
-        'Fixing & add more validation on purchasing from google play',
+        'Audited web services to identify & patch critical API vulnerabilities, leading to full ownership of core backend services',
+        'Refactored legacy CodeIgniter & vanilla PHP web applications, stabilizing database operations for enterprise clients',
+        'Implemented secure server-side receipt for Google Play in-app purchases, eliminating fraudulent transactions',
       ],
     },
     {
@@ -128,9 +124,9 @@ export default {
         new Date(2019, 5), new Date(2019, 11),
       ],
       do: [
-        'Developed new reporting system with .NET technologies using DevExpress framework to revolutionize their monolith desktop based system',
-        'Doing some chore for maintaining & troubleshooting employee\'s computer',
-        'Establish attendance tracker system (Mobile) to help the security officer cycling around company',
+        'Designed an enterprise reporting suite using .NET & DevExpress, migrating manual monolithic workflows into automated digital reporting',
+        'Built and deployed a mobile attendance and security patrol tracking system to monitor perimeter security checkpoints',
+        'Did some cross functional chore for maintaining & troubleshooting network, internal servers & employee\'s devices',
       ],
     },
   ],
