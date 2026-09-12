@@ -1,82 +1,278 @@
-# Static Site Boilerplate  &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Static%20Site%20Boilerplate%3A%20A%20better%20workflow%20for%20building%20modern%20static%20websites&url=http://staticsiteboilerplate.com/&via=ericalli&hashtags=html,css,javascript,webdev)
-[![Build Status](https://travis-ci.org/ericalli/static-site-boilerplate.svg?branch=master)](https://travis-ci.org/ericalli/static-site-boilerplate)
-[![devDependency Status](https://david-dm.org/ericalli/static-site-boilerplate/dev-status.svg)](https://david-dm.org/ericalli/static-site-boilerplate?type=dev)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Support on Open Collective](https://img.shields.io/badge/support-on%20open%20collective-3285FF.svg?logo=data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjQwcHgiIGhlaWdodD0iNDBweCIgdmlld0JveD0iMCAwIDQwIDQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0MS4yICgzNTM5NykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+U2xpY2U8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0ibG9nbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIC0xLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0iOjotaWNvbiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzIuNzc4ODkxNywyMC45MjExMjMgQzMyLjc3ODg5MTcsMjMuNDQ0MTIzMiAzMi4wNDYxNDI0LDI1Ljg2MTk5ODUgMzAuNzkwMDAwOSwyNy44NTkzNzM3IEwzNS45MTkyNDU0LDMzLjAxMDQ5OTIgQzM4LjQzMTUyODUsMjkuNjQ2NDk4OSA0MC4wMDE3MDU0LDI1LjQ0MTQ5ODQgNDAuMDAxNzA1NCwyMC45MjExMjMgQzQwLjAwMTcwNTQsMTYuNDAwNzQ3NSAzOC40MzE1Mjg1LDEyLjE5NTc0NzEgMzUuOTE5MjQ1NCw4LjgzMTc0Njc1IEwzMC43OTAwMDA5LDEzLjk4Mjg3MjMgQzMyLjA0NjE0MjQsMTUuOTgwMjQ3NSAzMi43Nzg4OTE3LDE4LjI5Mjk5NzcgMzIuNzc4ODkxNywyMC45MjExMjMgTDMyLjc3ODg5MTcsMjAuOTIxMTIzIFoiIGlkPSJTaGFwZSIgZmlsbD0iI0I4RDNGNCI+PC9wYXRoPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTIwLjAxMzU4NTgsMzMuNzQ2Mzc0MyBDMTMuMDAwMTI5LDMzLjc0NjM3NDMgNy4yNDI4MTM3LDI3Ljk2NDQ5ODcgNy4yNDI4MTM3LDIwLjkyMTEyMyBDNy4yNDI4MTM3LDEzLjg3Nzc0NzMgMTMuMDAwMTI5LDguMDk1ODcxNjggMjAuMDEzNTg1OCw4LjA5NTg3MTY4IEMyMi42MzA1NDczLDguMDk1ODcxNjggMjQuOTMzNDczNCw4LjgzMTc0Njc1IDI2LjkyMjM2NDEsMTAuMTk4MzcxOSBMMzIuMDUxNjA4Nyw1LjA0NzI0NjM3IEMyOC43MDE4OTc5LDIuNTI0MjQ2MTEgMjQuNTE0NzU5NiwwLjk0NzM3MDk1NiAyMC4wMTM1ODU4LDAuOTQ3MzcwOTU2IEM5LjAyMjM0NzUyLDAuOTQ3MzcwOTU2IDAuMDE5OTk5OTgwOSw5Ljg4Mjk5Njg2IDAuMDE5OTk5OTgwOSwyMS4wMjYyNDggQzAuMDE5OTk5OTgwOSwzMi4xNjk0OTkxIDkuMDIyMzQ3NTIsNDEgMjAuMDEzNTg1OCw0MSBDMjQuNjE5NDM4LDQxIDI4LjgwNjU3NjQsMzkuNDIzMTI0OCAzMi4xNTYyODcxLDM2LjkwMDEyNDYgTDI3LjAyNzA0MjYsMzEuNzQ4OTk5MSBDMjUuMDM4MTUxOSwzMy4wMTA0OTkyIDIyLjYzMDU0NzMsMzMuNzQ2Mzc0MyAyMC4wMTM1ODU4LDMzLjc0NjM3NDMgTDIwLjAxMzU4NTgsMzMuNzQ2Mzc0MyBaIiBpZD0iU2hhcGUiIGZpbGw9IiMzMzg1RkYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+)](https://opencollective.com/static-site-boilerplate)
-[![Join the chat at https://gitter.im/ericalli/static-site-boilerplate](https://badges.gitter.im/ericalli/static-site-boilerplate.svg)](https://gitter.im/ericalli/static-site-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Static CV / Resume Website
 
+[![Node Version](https://img.shields.io/badge/node-%3E%3D12.0.0%20%3C%3D14.21.3-brightgreen.svg)](package.json)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.0.15-38B2AC.svg)](https://tailwindcss.com/)
+[![Alpine.js](https://img.shields.io/badge/Alpine.js-v3.4.1-8BC0D0.svg)](https://alpinejs.dev/)
 
-**Discuss it on [Product Hunt](https://www.producthunt.com/posts/static-site-boilerplate) 🦄**
+A modern, high-performance, print-optimized static curriculum vitae (CV) & personal portfolio website. Built with a data-driven architecture using **Alpine.js**, styled with **Tailwind CSS**, bundled with **Webpack**, and designed to produce pixel-perfect output for both web browsers and printed PDF exports.
 
-[![Static Site Boilerplate](http://staticsiteboilerplate.com/externals/github.png)](https://github.com/ericalli/static-site-boilerplate/releases/latest)
+Repository: [https://github.yanuarizal.net/static-cv](https://github.yanuarizal.net/static-cv)
 
-* Homepage: [http://staticsiteboilerplate.com/](http://staticsiteboilerplate.com//)
-* Documentation: [https://docs.staticsiteboilerplate.com/](https://docs.staticsiteboilerplate.com/)
+---
 
-## Installation
+## Table of Contents
+
+- [Static CV / Resume Website](#static-cv--resume-website)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Key Features](#key-features)
+  - [Tech Stack](#tech-stack)
+  - [Project Structure](#project-structure)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Development Server](#development-server)
+    - [Production Build](#production-build)
+  - [Available Scripts](#available-scripts)
+  - [Customization Guide](#customization-guide)
+    - [1. Updating Resume Content](#1-updating-resume-content)
+    - [2. Site Configuration \& Metadata](#2-site-configuration--metadata)
+    - [3. Certificates \& Media Assets](#3-certificates--media-assets)
+    - [4. Styling \& Theming](#4-styling--theming)
+  - [Print \& PDF Export](#print--pdf-export)
+  - [Deployment](#deployment)
+    - [Surge](#surge)
+    - [FTP](#ftp)
+    - [Netlify / Static Hosts](#netlify--static-hosts)
+  - [License](#license)
+
+---
+
+## Overview
+
+This project provides a clean, responsive, single-page CV application. Instead of hardcoding content directly across static HTML markup, all resume data—including personal information, work experience, education, skills, and certifications—is maintained in a centralized JavaScript data object.
+
+Alpine.js binds and renders this data reactively into an accessible HTML structure, while Tailwind CSS and customized SCSS rules ensure the document renders elegantly on screens of all sizes and outputs cleanly when printed or exported as a PDF.
+
+---
+
+## Key Features
+
+- **Data-Driven Architecture:** All resume content is maintained separately in `src/javascripts/variables.js`, allowing rapid updates without modifying HTML markup.
+- **Print & PDF Optimized:** Dedicated `@media print` rules, Tailwind CSS print classes, and CSS page-break properties (`break-inside-avoid-page`, `break-before-page`) deliver clean multi-page PDF generation without broken cards or awkward cutoffs.
+- **Responsive Layout:** Mobile-first responsive layout that adapts seamlessly across phone, tablet, and desktop viewports.
+- **Lightweight Reactivity:** Uses Alpine.js (v3) for declarative DOM rendering without the bundle overhead of larger frameworks.
+- **Automated Asset Pipelines:**
+  - Automatic cross-platform favicon generation for Web, iOS, and Android devices via `favicons-webpack-plugin`.
+  - Automatic `sitemap.xml` and `robots.txt` generation during production builds.
+  - Image optimization pipeline using `image-webpack-loader`.
+  - CSS minification with `cssnano` and `mini-css-extract-plugin`.
+  - ES6+ JavaScript transpilation using Babel and ESLint.
+- **Live Development Server:** Fast local development with hot module reloading (`webpack-dev-server`).
+- **Bundle Inspection:** Integrated `webpack-bundle-analyzer` and `size-plugin` to monitor bundle footprint and asset weight.
+
+---
+
+## Tech Stack
+
+| Layer                   | Technology                                                                                      | Purpose                                                       |
+| ----------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Core Framework**      | [Alpine.js](https://alpinejs.dev/) (v3)                                                         | Lightweight reactive data binding for templates               |
+| **Styling**             | [Tailwind CSS](https://tailwindcss.com/) (v3) & [Sass](https://sass-lang.com/)                  | Utility-first styling, responsive grids, and print rules      |
+| **Icons**               | [FontAwesome SVG](https://fontawesome.com/)                                                     | Scalable vector icons for contact links & badges              |
+| **Date Handling**       | [date-fns](https://date-fns.org/)                                                               | Date formatting and localized duration rendering              |
+| **Bundler**             | [Webpack](https://webpack.js.org/) (v4)                                                         | Asset processing, bundling, minification, and code extraction |
+| **Transpiler & Linter** | [Babel](https://babeljs.io/), [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/) | JavaScript and SCSS code quality and standard enforcement     |
+| **Deployment**          | [Surge](https://surge.sh/) / [Netlify](https://www.netlify.com/) / FTP                          | Static hosting deployment                                     |
+
+---
+
+## Project Structure
+
+```text
+static-cv/
+├── .github/                   # GitHub issue templates and funding configs
+├── config/                    # Webpack and site build configurations
+│   ├── site.config.js         # Site metadata (name, URL, favicon, analytics)
+│   ├── site.deploy.js         # FTP deployment script
+│   ├── site.setup.js          # Interactive setup wizard
+│   ├── webpack.config.js      # Main Webpack configuration & devServer settings
+│   ├── webpack.loaders.js     # Loaders (Babel, Sass, PostCSS, Images, Fonts)
+│   └── webpack.plugins.js     # Webpack plugins (HTML, Favicons, Sitemap, Robots)
+├── src/                       # Application source code
+│   ├── 404.html               # Custom 404 error page
+│   ├── index.html             # Main CV HTML template powered by Alpine.js
+│   ├── robots.txt             # Default robots rules
+│   ├── assets/                # Static assets (favicons, images, certificates)
+│   │   ├── favicon.png        # Source icon (512x512) for automated favicon generation
+│   │   └── certs/             # Certificate previews and thumbnail images
+│   ├── javascripts/           # Client-side scripts and data store
+│   │   ├── methods.js         # Formatting and URL helper functions
+│   │   ├── scripts.js         # Application bootstrap & Alpine initialization
+│   │   └── variables.js       # Central data store (work history, skills, certs)
+│   └── stylesheets/           # Global styles and resets
+│       └── styles.scss        # Scss stylesheet with print media rules
+├── .editorconfig              # Editor code formatting configuration
+├── .eslintrc.js               # ESLint configuration (Airbnb base)
+├── .stylelintrc.js            # Stylelint configuration for SCSS
+├── netlify.toml               # Netlify deployment configuration
+├── package.json               # Project dependencies and npm scripts
+├── tailwind.config.js         # Tailwind CSS theme and purge settings
+└── README.md                  # Project documentation
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+This project uses Webpack 4 and `node-sass` 4.x, which require a compatible Node.js version as declared in `package.json`:
+
+- **Node.js:** `>=12.0.0 <=14.21.3` (recommended via [nvm](https://github.com/nvm-sh/nvm))
+- **npm:** `>=6.0.0`
+
+If you use `nvm`, switch to a supported Node release:
 
 ```bash
-git clone https://github.com/ericalli/static-site-boilerplate
- ```
- 
- ```bash
-cd static-site-boilerplate
- ```
- 
- ```bash
-rm -rf .git && git init
- ```
- 
- ## Features
+nvm install 14
+nvm use 14
+```
 
-* **Modern Technologies:** Full support for HTML5, JavaScript (Vanilla and ES6) and CSS (Sass and PostCSS)
-* **Built-in Server:** Local development server with hot reloading
-* **Performance Tuning:** CSS and JavaScript transpilation, bundling, autoprefixing, and minification
-* **Image Optimization:** Optimizes images for loading speed
-* **Favicon Generation:** Automatically generates all favicons for Web, Apple and Android devices from one image file
-* **Code Linting:** Full support for JavaScript (ESLint) and CSS (StyleLint) linting
-* **Sitemap & Robots.txt Generation:** Automatically generates a sitemap.xml and robots.txt files
-* **Setup Wizard:** Optionally install helpful libraries and snippets including:
-  * CSS Resets: `normalize.css` `reset.css` or `sanitize.css`
-  * jQuery
-  * Google Analytics
-* **Cutting Edge:** Uses Webpack for processing and bundling your code 
-* **Deployment:** Built-in support for deployment via FTP or Netlify 
+### Installation
 
-## Browser Support
+Clone the repository and install project dependencies:
 
-* Chrome _\(latest 2\)_
-* Edge _\(latest 2\)_
-* Firefox _\(latest 2\)_
-* Internet Explorer 9+
-* Opera _\(latest 2\)_
-* Safari _\(latest 2\)_
+```bash
+git clone https://github.com/yanuarizalk/static-cv.git
+cd static-cv
+npm install
+```
 
-_This  is fully dependent on your code and doesn't mean that Static Site Boilerplate won't work in older browsers, just that we'll ensure compatibility with the ones mentioned above._
+### Development Server
 
-## Support & Contributing
+Launch the local development server with hot-reloading:
 
-For general questions about Static Site Boilerplate, tweet at [@ericalli](https://twitter.com/ericalli).
+```bash
+npm start
+```
 
-Anyone is welcome to contribute. If you decide to get involved, please take a moment and check out the following:
+Once running, navigate to `http://localhost:8111` in your browser. Any changes made to templates, styles, or data will trigger hot-reloading.
 
-* [Bug reports](.github/ISSUE_TEMPLATE/bug_report.md)
-* [Feature requests](.github/ISSUE_TEMPLATE/feature_request.md)
+### Production Build
 
+Compile and optimize all assets into the `dist/` directory:
 
-## Sponsors
+```bash
+npm run build:dist
+```
 
-[**Become a sponsor**](https://opencollective.com/static-site-boilerplate) and get your company in front of thousands of engaged front end developers and support this project!
+To preview the built production bundle locally:
 
-[![Become a sponsor](https://opencollective.com/static-site-boilerplate/tiers/backer.svg?avatarHeight=64)](https://opencollective.com/static-site-boilerplate)
+```bash
+npm run start:dist
+```
 
-## Author
+This runs a local production HTTP server serving the contents of the `dist/` folder.
 
-**Eric Alli**
+---
 
--   Website: <http://www.ericalli.com/>
--   Github: <https://github.com/ericalli/>
+## Available Scripts
+
+| Script                | Command                                                           | Description                                                  |
+| --------------------- | ----------------------------------------------------------------- | ------------------------------------------------------------ |
+| `npm start`           | `cross-env NODE_ENV=development webpack-dev-server ...`           | Runs local dev server on port `8111` with HMR                |
+| `npm run build:dist`  | `cross-env NODE_ENV=production webpack ...`                       | Builds optimized production static files into `dist/`        |
+| `npm run start:dist`  | `cross-env NODE_ENV=production webpack ... && http-server ./dist` | Compiles production assets and serves them via `http-server` |
+| `npm run lint:js`     | `eslint "src/**/*.js"`                                            | Runs ESLint validation on JavaScript files                   |
+| `npm run lint:styles` | `stylelint "src/**/*.scss"`                                       | Runs Stylelint validation on SCSS stylesheets                |
+| `npm run deploy`      | `surge dist cv.yanuarizal.net`                                    | Deploys the `dist/` folder to Surge                          |
+| `npm run deploy:ftp`  | `node ./config/site.deploy.js`                                    | Deploys static build via FTP using credentials in `.env`     |
+| `npm run setup`       | `node ./config/site.setup.js`                                     | Interactive CLI setup wizard for third-party libraries       |
+
+---
+
+## Customization Guide
+
+### 1. Updating Resume Content
+
+All resume information is isolated in [`src/javascripts/variables.js`](src/javascripts/variables.js):
+
+- **Personal Info:** `mobile`, `email`, `github_username`, `website`, `address`, `google_place`, and `description`.
+- **Technologies / Skills:** List of strings in the `techs` array.
+- **Educations:** Array of education entries containing `institution`, `since` date range tuples (`[startDate, endDate]`), and `do` bullet points.
+- **Experiences:** Array of job entries containing `company`, `as` (role), `since` date range tuples, and `do` responsibility bullets.
+- **Certificates:** Array of credentials with `name`, `image` path, `link`, `issuer`, and `issued_date`.
+
+Helper functions (such as date range formatting, WhatsApp links, Google Maps links, and email anchors) can be updated or extended in [`src/javascripts/methods.js`](src/javascripts/methods.js).
+
+### 2. Site Configuration & Metadata
+
+Site metadata used by HTML tags, Webpack plugins, and SEO generators can be edited in [`config/site.config.js`](config/site.config.js):
+
+```javascript
+const config = {
+  site_name: 'Yanuarizal\'s CV',
+  site_description: 'Software Engineer / Backend Specialist CV',
+  site_url: 'https://cv.yanuarizal.net',
+  googleAnalyticsUA: '', // Optional Google Analytics Tracking ID
+  port: process.env.PORT || 8000,
+  // ...
+};
+```
+
+### 3. Certificates & Media Assets
+
+- Place certificate images and thumbnail files inside [`src/assets/certs/`](src/assets/certs/).
+- Update the base favicon by replacing [`src/assets/favicon.png`](src/assets/favicon.png) (recommended size: 512x512 px). Webpack will automatically generate all necessary platform icons during build time.
+
+### 4. Styling & Theming
+
+- **Tailwind CSS:** Edit [`tailwind.config.js`](tailwind.config.js) to configure responsive screen breakpoints, custom colors, fonts, or purge paths.
+- **SCSS Styles:** Global styling overrides, reset configurations, and print rules are located in [`src/stylesheets/styles.scss`](src/stylesheets/styles.scss).
+- **Template Layout:** Modify the main markup structure and Alpine.js directives in [`src/index.html`](src/index.html).
+
+---
+
+## Print & PDF Export
+
+The layout is crafted specifically for clean physical printing and PDF export via modern browser print dialogs:
+
+1. Open the running website in Google Chrome, Chromium, or Firefox.
+2. Press `Ctrl + P` (or `Cmd + P` on macOS).
+3. In the print dialog settings:
+   - **Destination:** Save as PDF
+   - **Layout:** Portrait
+   - **Paper Size:** A4 or Letter
+   - **Margins:** None or Default
+   - **Options:** Enable **Background graphics** to preserve header and badge styles.
+4. CSS print directives (`print:m-0`, `print:shadow-none`, `break-inside-avoid-page`, and `break-before-page`) ensure headers, job cards, and certificate sections do not split awkwardly across page breaks.
+
+---
+
+## Deployment
+
+### Surge
+
+Deploy directly using the bundled npm script:
+
+```bash
+npm run build:dist
+npm run deploy
+```
+
+### FTP
+
+Configure your FTP server credentials and deploy automatically:
+
+```bash
+npm run build:dist
+npm run deploy:ftp
+```
+
+*(Set your FTP host, user, password, and remote path in environment variables or configuration).*
+
+### Netlify / Static Hosts
+
+This project includes a [`netlify.toml`](netlify.toml) file preconfigured for static deployment:
+
+- **Build command:** `npm run build:dist`
+- **Publish directory:** `dist`
+
+You can also deploy the contents of the `dist/` folder to GitHub Pages, Cloudflare Pages, Vercel, or AWS S3.
+
+---
 
 ## License
 
-The code is available under the [MIT license](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE).
